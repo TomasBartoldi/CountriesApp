@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 50vh;
+    
 }
 
 .world-gif{
@@ -19,14 +20,17 @@
 }
 
 .title-container{
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.title{
-    font-size: 80px;
+.landing-title{
+    font-size: 50px;
+    margin-bottom: 175px;
+    
 }
 
 .bot-row-container{
@@ -53,6 +57,7 @@
     border: 2px solid white;
     background-color: black;
     color: white;
+    margin-left: 220px;
 }
 
 .landingbutton:hover{

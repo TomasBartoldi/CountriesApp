@@ -13,13 +13,20 @@ const Footer = () => {
             </div>
             <div className='social-icons'>
                 <div className='icons'>
+                    <a href="https://www.linkedin.com/in/tomas-bartoldi-395818242/">
                     <BsLinkedin size={30} color={'white'} />
+                    </a>
                 </div>
                 <div className='icons'>
+                    <a href="https://github.com/TomasBartoldi">
                     <BsGithub size={30} color={'white'} />
+                    </a>
                 </div>
+
                 <div className='icons'>
+                    <a href="#">
                     <BsHandbagFill size={30} color={'white'} />
+                    </a>
                 </div>
 
             </div>

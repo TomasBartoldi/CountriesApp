@@ -14,7 +14,7 @@ const LandingPage = () => {
                     <img src={'https://www.losandes.com.ar/resizer/snhNgWUAGNwrK-XzOGcTK1VMzq4=/980x640/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/UVUHFPBVTVHSTIBLIYVBPRFZKA.gif'} alt="img not found" />
                 </div>
                 <div className="title-container">
-                    <h1 className="title">COUNTRIES APP</h1>
+                    <h1 className="landing-title">COUNTRIES APP</h1>
                 </div>
                </div>
                <div className="bot-row-container">

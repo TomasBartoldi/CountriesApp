@@ -6,6 +6,7 @@ import './CreateActivity.css'
 
 
 
+
 const CreateActivity = () => {
 
     const dispatch = useDispatch()
@@ -128,13 +129,15 @@ const CreateActivity = () => {
             <div className="form-card">
 
             <div className="form-title">
-            <h1>Create Activities</h1>
+            <h1>ADD ACTIVITIES</h1>
             </div>
 
 
-            <form onSubmit={e=>handleSubmit(e)}>
+            <form 
+            className="form"
+            onSubmit={e=>handleSubmit(e)}>
                 <div className="input-activity">
-                    <label >Activity:</label>
+                    <label className="label-activity" >Activity:</label>
                     <input 
                     className="input"
                     type="text"
@@ -148,7 +151,7 @@ const CreateActivity = () => {
                 </div>
 
                 <div className="input-difficulty">
-                    <label>Difficulty:</label>
+                    <label className="label-dificult">Difficulty:</label>
                     <select className="input" defaultValue={'default'} name="dificulty" onChange={e=>handleSelect(e)}>
                         <option value='default' disabled>Difficulty</option>
                         <option value="1">1</option>
@@ -159,16 +162,16 @@ const CreateActivity = () => {
                     </select>
                 </div>
 
-                <div>
+                
                 {errors.dificulty&&(
                         <p className="warning">{errors.dificulty}</p>
                     )}
-                </div>
+                
 
                 <div className="input-duration">
-                    <label>Duration:</label>
+                    <label className="label-duration">Duration:</label>
                     <input
-                    className="input"
+                    className="input-duracion"
                     type="number"
                     value= {input.duration}
                     name="duration"
@@ -180,7 +183,7 @@ const CreateActivity = () => {
                 </div>
 
                 <div className="input-season">
-                    <label>Season: </label>
+                    <label className="label-dificult">Season: </label>
                     <select className="input" defaultValue={'default'} name="season" onChange={e=>handleSelect(e)}>
                         <option value='default' disabled>Season</option>
                         <option value="summer">Summer</option>
@@ -190,14 +193,14 @@ const CreateActivity = () => {
                     </select>
                 </div>
 
-                <div>
+                
                 {errors.season&&(
                         <p className="warning">{errors.season}</p>
                     )}
-                </div>
+                
 
                 <div className="input-countries">
-                <select className="input" defaultValue={'default'} name="countriesName" onChange={e=>handleCountrySelect(e)}>
+                <select className="countries-input" defaultValue={'default'} name="countriesName" onChange={e=>handleCountrySelect(e)}>
                 <option value='default' disabled>Select Country</option>
                     {countries.map(m=>(
                         <option value={m.name}>{m.name}</option>
@@ -211,6 +214,9 @@ const CreateActivity = () => {
 
                 <div className="create-btn-container">
                 <button className="create-btn" type='submit' disabled={!buttonEnabled}>Create</button>
+                <div className="form-btn-container">
+            <Link to="/home"><button className="form-btnhome">Home</button></Link>
+            </div>
                 </div>
             {
                 input.countriesName.map( el =>
@@ -221,9 +227,7 @@ const CreateActivity = () => {
                 </div>               
             )}
             </form>
-            <div className="form-btn-container">
-            <Link to="/home"><button className="form-btnhome">Home</button></Link>
-            </div>
+  
             </div>
         </div>
     )
