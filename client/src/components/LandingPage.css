@@ -1,71 +1,64 @@
-/* .landing-container{
-    background-image: url(https://img.freepik.com/vector-gratis/mapa-trabajo-fondo-tecnologia_1017-31183.jpg?w=1060&t=st=1666019193~exp=1666019793~hmac=f58295b7ce59507a03292959cb753711894b999bac493c2f7dd5f427e6456904);
+.landing-container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 
-    background-position: top;
-    background-attachment: fixed;
-    background-size: cover;
+.title-gif-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+}
 
-} */
+.world-gif{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.title-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .title{
-    font-size: 70px;
-    color: #058fc1;
-    margin-top: 90px;
+    font-size: 80px;
 }
 
-.landingbutton {
-    --color: #058fc1;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
-    margin-top: 430px;
+.bot-row-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
 }
-   
-.landingbutton::before, .landingbutton::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
+
+.second-img-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
-   
-.landingbutton::before {
-    top: -1em;
-    left: -1em;
-   }
-   
-.landingbutton::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-   }
-   
-.landingbutton:hover::before, .landingbutton:hover::after {
-    height: 410px;
-    width: 410px;
+
+.landingbutton-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-   
-.landingbutton:hover {
-    color: rgb(10, 25, 30);
+
+.landingbutton{
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
 }
-   
-.landingbutton:active {
-    filter: brightness(.8);
+
+.landingbutton:hover{
+    background-color: rgb(152, 152, 152);
+    color: black;
+    transition: 0.7s;
 }
 
 
