@@ -1,24 +1,35 @@
 .countrie-card{
     width: 290px;
-    height: 290px;
-    border-radius: 30px;
-    background: rgba(0, 89, 144, 0.605);
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-    -15px -15px 30px rgb(25, 25, 25);
+    height: 380px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 6px 6px 5px 0px rgba(179,179,179,0.75);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(179,179,179,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(179,179,179,0.75);
 }
 
 .countrie-flag{
-    padding: 20px;
-    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid black;
+}
+
+.countrie-name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .countrie-name{
-    color: white;
+    color: black;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .countrie-continent{
     display: center;
-    color: white;
+    color: black;
     text-decoration: none;
 }
