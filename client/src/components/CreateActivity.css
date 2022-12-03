@@ -1,0 +1,82 @@
+.warning{
+    color: red;
+}
+
+.form-title{
+    font-size: 15px;
+    padding-top: 2rem;
+}
+
+.form-container{
+    padding-top: 3rem;
+    padding-left: 28rem;
+}
+
+.form-card{
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    background: rgba(0, 89, 144, 0.605);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(25, 25, 25);
+
+}
+
+.form-btn-container{
+    padding-top: 4rem;
+}
+
+.create-btn{
+    border-radius: 7px;
+    padding: 7px 7px;
+    font-size: 20px;
+    background-color: rgb(0, 89, 144);
+    color: white;
+    cursor: pointer;
+}
+
+.form-btnhome{
+    border-radius: 7px;
+    padding: 7px 7px;
+    font-size: 20px;
+    background-color: rgb(0, 89, 144);
+    color: white;
+    cursor: pointer;
+}
+
+.input-activity{
+    padding-top: 2rem;
+    font-size: 20px;
+}
+
+.input-difficulty{
+    padding-top: 1rem;
+    font-size: 20px;
+} 
+
+.input-duration{
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+.input-season{
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+.input-countries{
+    padding-top:1rem;
+    font-size: 20px;
+}
+
+.input{
+    font-size: 20px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.create-btn-container{
+    padding-top: 2rem;
+}
+
+

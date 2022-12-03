@@ -1,0 +1,43 @@
+
+.display-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 4rem;
+    margin-left: 50px;
+    padding: auto;
+}
+
+.country-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.search-input{
+    padding: 7px 7px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: solid 2px;
+    margin-right: px;
+}
+
+.search-button{
+    border-radius: 7px;
+    padding: 7px 7px;
+    font-size: 20px;
+    background-color: rgb(0, 89, 144);
+    color: white;
+    cursor: pointer;
+}
+
+.filters{
+    padding: 30px;
+}
+
+.filters-boxes{
+    font-size: 20px;
+    border-radius: 7px;
+    margin-right: 10px;
+}

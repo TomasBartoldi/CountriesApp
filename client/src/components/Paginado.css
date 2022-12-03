@@ -1,0 +1,21 @@
+.paginado{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.number{
+   background-color: rgba(0, 89, 144, 0.605); 
+   margin-right: 3px; 
+   border: 1px solid black;
+   border-radius: 20%;
+   font-size: 12px;
+   padding: 7px 15px;
+   height: 32px;
+   box-sizing: border-box;
+   color: white;
+   cursor: pointer;
+}
+
+/* #058fc1 */

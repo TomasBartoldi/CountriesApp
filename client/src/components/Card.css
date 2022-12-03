@@ -1,0 +1,24 @@
+.countrie-card{
+    width: 290px;
+    height: 290px;
+    border-radius: 30px;
+    background: rgba(0, 89, 144, 0.605);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(25, 25, 25);
+}
+
+.countrie-flag{
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.countrie-name{
+    color: white;
+    text-decoration: none;
+}
+
+.countrie-continent{
+    display: center;
+    color: white;
+    text-decoration: none;
+}

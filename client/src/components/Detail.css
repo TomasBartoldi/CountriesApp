@@ -1,0 +1,59 @@
+.detail-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem; 
+    justify-items: center;
+}
+
+.flag{
+    padding: 2rem 2rem;
+}
+
+.flag-detail{
+    width: 130px;
+    height: 105px;  
+}
+
+.detail-left{
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background: rgba(0, 89, 144, 0.605);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(25, 25, 25);
+    font-size: 15px;
+    color: #fff;
+}
+
+.detail-attributes{
+    padding-top: 2rem;
+}
+
+.button-position{
+    padding-top: 2rem;
+}
+
+.detail-button{
+    border-radius: 7px;
+    padding: 7px 7px;
+    font-size: 20px;
+    background-color: rgb(0, 89, 144);
+    color: white;
+    cursor: pointer;
+}
+
+.card-activities{
+    list-style-type: none;
+}
+
+.detail-right{
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background: rgba(0, 89, 144, 0.605);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(25, 25, 25);
+    font-size: 20px;
+    color: #fff;
+    padding-top: 2rem;
+}
