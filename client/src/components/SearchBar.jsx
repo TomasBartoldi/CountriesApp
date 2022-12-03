@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getCountriesByName } from '../actions/actions';
+import { FaSearch } from 'react-icons/fa'
 
 
 const SearchBar = () => {
@@ -21,20 +22,23 @@ const SearchBar = () => {
     }
 
   return (
-    <div>
-        
+    <div className='search-container'>
+        <div className='input-container'>
         <input className='search-input'
          type='text'
          placeholder='Search country'
          value={name}
          onChange={e=>handleInputChange(e)}
         />
-
+        </div>
+      <div className='search-button-container'>
         <button className='search-button'
          type='submit' 
          onClick={e=>handleSubmit(e)}>
-            Search
+            <FaSearch color={'black'} size={20} className='search-icon' />
          </button>
+      </div>
+
 
     </div>
   )

@@ -4,6 +4,7 @@ import { getCountries, filterCountriesByContinent, filterActivities, orderByName
 import { Link } from 'react-router-dom'
 import Card from './Card';
 import Paginado from "./Paginado";
+import Footer from './Footer'
 import Navbar from "./Navbar";
 import './Home.css'
 
@@ -77,45 +78,41 @@ const Home = () => {
 
                 <select className="filters-boxes" onChange={e => handleFilterContinents(e)}>
                     <option value="All">All continents</option>
-                    <option value="Asia">Asia</option>
-                    <option value="South America">South America</option>
-                    <option value="North America">North America</option>
-                    <option value="Europe">Europe</option>
-                    <option value="Oceania">Oceania</option>
-                    <option value="Antarctica">Antarctica</option>
-                    <option value="Africa">Africa</option>
+                    <option className="options" value="Asia">Asia</option>
+                    <option className="options" value="South America">South America</option>
+                    <option className="options" value="North America">North America</option>
+                    <option className="options" value="Europe">Europe</option>
+                    <option className="options" value="Oceania">Oceania</option>
+                    <option className="options" value="Antarctica">Antarctica</option>
+                    <option className="options" value="Africa">Africa</option>
                 </select>
 
                 <select className="filters-boxes" onChange={e => handleFilterActivities(e)}>
-                    <option value="all" disabled>Activities</option>
-                    <option value="with">With Activities</option>
-                    <option value="without">Without Activities</option>
+                    <option className="options" value="all" disabled>Activities</option>
+                    <option className="options" value="with">With Activities</option>
+                    <option className="options" value="without">Without Activities</option>
                 </select>
                 
                 <select className="filters-boxes" defaultValue={'default'} onChange={(e) => handleSortByName(e)}>
-                    <option value="default" disabled>Order by name</option>
-                    <option value="asc">A-Z</option>
-                    <option value="desc">Z-A</option>
+                    <option className="options" value="default" disabled>Order by name</option>
+                    <option className="options" value="asc">A-Z</option>
+                    <option className="options" value="desc">Z-A</option>
                 </select>
 
                 <select className="filters-boxes" onChange={e => handleSortPopulation(e)}>
-                    <option value="default" disabled>Sort by population</option>
-                    <option value="desc">Higher population</option>
-                    <option value="asc">Lower population</option>
+                    <option className="options" value="default" disabled>Sort by population</option>
+                    <option className="options" value="desc">Higher population</option>
+                    <option className="options" value="asc">Lower population</option>
                 </select>
 
                 </div>
 
-                <Paginado 
-                    countriesPerPage={countriesPerPage}
-                    allCountries={allCountries.length}
-                    paginado={paginado}
-                />
+               
                 <div className="display-card">
                 {currentCountries && 
                 currentCountries.map(c =>{
-                        return (
-                           <div className="country-cards">
+                    return (
+                        <div className="country-card">
                             <Link className="link" to={'/home/' + c.id}>  
                                 <Card 
                                 name={c.name} 
@@ -126,9 +123,15 @@ const Home = () => {
                             </Link>                 
                            </div>          
                         )})
-                }
+                    }
                 </div>
             </div>
+                    <Paginado 
+                        countriesPerPage={countriesPerPage}
+                        allCountries={allCountries.length}
+                        paginado={paginado} />
+
+                    <Footer />    
         </div>
     )
     

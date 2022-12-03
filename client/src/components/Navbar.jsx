@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <div className='nav-container'>
       <div className='title-container'>
+        <Link to='/home'>
         <h1 className='nav-title'>COUNTRIES APP</h1>
+        </Link>
       </div>
 
         <SearchBar />
@@ -30,15 +32,6 @@ export default Navbar
 
 
 
-      {/*  <div>
-        <a href="https://linkedin.com/in/tomas-bartoldi-395818242/">
-          <FaLinkedin size={50} style={{ color: '#fff', marginRight: '1rem' }} />
-        </a>
-        
-        <a href="https://github.com/TomasBartoldi">
-          <FaGithub size={50} style={{ color: '#fff', marginRight: '1rem' }} />
-        </a>
-       </div> */}
 
 
 
