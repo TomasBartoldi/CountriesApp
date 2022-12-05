@@ -4,6 +4,9 @@ import LandingPage from './components/LandingPage'
 import Home from './components/Home'
 import CreateActivity from './components/CreateActivity';
 import Detail from './components/Detail';
+import axios from 'axios';
+
+axios.defaults.baseURL = "https://localhost:3001"; 
 
 function App() {
   return (
