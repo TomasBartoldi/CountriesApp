@@ -34,7 +34,6 @@ const Home = () => {
         setCurrentPage(pageNumber)
     }
 
-    //me traigo los paises del estado, cuando el componente se monta
     useEffect(() => {
        dispatch(getCountries());
     }, [dispatch]);
